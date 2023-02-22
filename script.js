@@ -75,9 +75,6 @@ const handleElementMessage = (element_ref, message) =>
   const x_check = ( left_bound < x && x < right_bound ) ? true : false;
   const y_check = (0 < y_off && y_off < height ) ? true : false;
 
-  cursorTrace.innerHTML = 'message';
-
-
   if (x_check && y_check) {
     console.log('setting HTML');
     cursorTrace.innerHTML = message;
